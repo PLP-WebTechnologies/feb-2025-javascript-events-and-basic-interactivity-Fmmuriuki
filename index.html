@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felix's JS Playground | PLP Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="motivation-banner">
+        <div class="motivation-content">
+            <h2>Felix M Muriuki's Coding Journey</h2>
+            <div class="progress-container">
+                <div class="progress-bar" id="journey-progress"></div>
+                <div class="progress-text">PLP Academy Progress: <span id="progress-percent">65</span>%</div>
+            </div>
+            <p class="motivation-quote" id="dynamic-quote">"The expert in anything was once a beginner."</p>
+            <button id="encourage-btn">Encourage Me!</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Event Handling Section -->
+        <section id="event-handling">
+            <h2>Event Handling</h2>
+            
+            <div class="event-box">
+                <button id="click-me">Click Me!</button>
+                <p id="click-output">Waiting for your click...</p>
+            </div>
+            
+            <div class="event-box hover-box">
+                <p>Hover over me!</p>
+                <p id="hover-output">Mouse hasn't entered yet</p>
+            </div>
+            
+            <div class="event-box">
+                <p>Type something:</p>
+                <input type="text" id="keypress-input" placeholder="Start typing...">
+                <p id="keypress-output">No keypress detected yet</p>
+            </div>
+            
+            <div class="event-box secret-box">
+                <p>Double click or long press me for a secret!</p>
+                <p id="secret-output">🤫</p>
+            </div>
+        </section>
+        
+        <!-- Interactive Elements Section -->
+        <section id="interactive-elements">
+            <h2>Interactive Elements</h2>
+            
+            <div class="interactive-box">
+                <button id="color-changer">Change My Color!</button>
+            </div>
+            
+            <div class="interactive-box">
+                <div class="image-gallery">
+                    <img src="felix passport.jpg" alt="Gallery image" id="gallery-image">
+                    <div class="gallery-controls">
+                        <button id="prev-btn">Previous</button>
+                        <button id="next-btn">Next</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="interactive-box">
+                <div class="tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+                        <button class="tab-btn" data-tab="tab2">Tab 2</button>
+                        <button class="tab-btn" data-tab="tab3">Tab 3</button>
+                    </div>
+                    <div class="tab-content">
+                        <div id="tab1" class="tab-pane active">Content for Tab 1</div>
+                        <div id="tab2" class="tab-pane">Content for Tab 2</div>
+                        <div id="tab3" class="tab-pane">Content for Tab 3</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Form Validation Section -->
+        <section id="form-validation">
+            <h2>Form Validation</h2>
+            
+            <form id="validation-form">
+                <div class="form-group">
+                    <label for="name">Name (required):</label>
+                    <input type="text" id="name" required>
+                    <div class="error-message" id="name-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                    <div class="error-message" id="email-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password (min 8 chars):</label>
+                    <input type="password" id="password">
+                    <div class="error-message" id="password-error"></div>
+                </div>
+                
+                <button type="submit">Submit</button>
+                <p id="form-status"></p>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>Created with ❤️ by <span class="highlight">Felix Muriuki Muriithi</span></p>
+            <p>PLP Academy Student | Future JavaScript Master</p>
+            <div class="social-links">
+                <a href="#" class="social-icon">💻</a>
+                <a href="#" class="social-icon">📚</a>
+                <a href="#" class="social-icon">🚀</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
